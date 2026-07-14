@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대흥정밀 | 파이프가공업체 – 파이프벤딩·축관·확관·인발·스웨이징·주문제작</title>
+  <meta name="description" content="대흥정밀은 파이프벤딩, 파이프스웨이징, 파이프인발, 파이프축관, 파이프확관, 파이프주문제작 전문 가공업체입니다. 즉시 견적 상담 가능합니다.">
+  <meta name="keywords" content="파이프가공업체,파이프밴딩,파이프벤딩,파이프스웨이징,파이프인발,파이프제작,파이프주문제작,파이프축관,파이프확관,대흥정밀">
+  <link rel="canonical" href="https://daeheungsteel.co.kr/">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) - Google Ads: dhsteel 651-167-5293 -->
+  <!-- TODO: 아래 AW-XXXXXXXX를 실제 전환 ID로 교체 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- 로딩 오버레이 -->
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="spinner"></div>
+    <p>견적 문의를 전송 중입니다...</p>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">대흥정밀<span>.</span></a>
+      <nav class="nav">
+        <a href="#services">서비스 소개</a>
+        <a href="#why-us">왜 대흥정밀?</a>
+        <a href="#quote-form" class="btn btn-primary">
+          <span class="hide-mobile">간편 </span>견적 요청
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-container container">
+      <div class="hero-content">
+        <span class="badge">파이프 가공 전문업체 · 경기도 시흥시</span>
+        <h1>정밀 파이프 가공<br><span>대흥정밀</span>에 맡기세요</h1>
+        <p>파이프벤딩·스웨이징·인발·축관·확관·주문제작까지<br>
+           다품종 소량부터 대량 납품까지 빠르고 정확하게 처리합니다.</p>
+        <div class="hero-buttons">
+          <a href="#quote-form" class="btn btn-lg btn-primary">간편 견적 내기</a>
+          <a href="#services" class="btn btn-lg btn-outline">서비스 카탈로그</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/banner.jpg" alt="대흥정밀 파이프 가공 공장 전경">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES GRID ── -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>대흥정밀 파이프 가공 서비스</h2>
+        <p>정밀 설비와 숙련 기술로 모든 규격의 파이프 가공을 원스톱으로 처리합니다.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- 1. 파이프벤딩 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/pipe_bending.jpg" alt="파이프벤딩 가공">
+            <span class="service-tag">인기 서비스</span>
+          </div>
+          <div class="service-info">
+            <h3>파이프벤딩 / 파이프밴딩</h3>
+            <p class="keyword">검색키워드: 파이프밴딩, 파이프벤딩</p>
+            <p class="desc">CNC 벤딩 설비를 활용해 파이프를 원하는 각도와 곡률로 정밀하게 굽힘 가공합니다. 단품부터 대량까지 대응 가능합니다.</p>
+            <ul class="specs">
+              <li><strong>가공 방식:</strong> CNC / 유압 벤딩 머신</li>
+              <li><strong>적용 소재:</strong> 탄소강, 스테인리스, 알루미늄, 동</li>
+              <li><strong>가공 각도:</strong> 1° ~ 180° (맞춤 각도 대응)</li>
+              <li><strong>주요 용도:</strong> 배관, 자동차 부품, 산업 구조물</li>
+            </ul>
+            <button onclick="selectService('파이프벤딩')" class="btn btn-block btn-secondary">바로 견적요청</button>
+          </div>
+        </div>
+
+        <!-- 2. 파이프스웨이징 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/pipe_swaging.jpg" alt="파이프스웨이징 가공">
+            <span class="service-tag">정밀 단조</span>
+          </div>
+          <div class="service-info">
+            <h3>파이프스웨이징</h3>
+            <p class="keyword">검색키워드: 파이프스웨이징</p>
+            <p class="desc">유압 스웨이징 장비를 이용해 파이프 단부를 단조 성형합니다. 직경의 축소·확대 및 이형 단면 성형이 가능합니다.</p>
+            <ul class="specs">
+              <li><strong>가공 형태:</strong> 단부 축관·확관·이형 성형</li>
+              <li><strong>적용 소재:</strong> 탄소강, 스테인리스, 특수합금</li>
+              <li><strong>특징:</strong> 용접 없이 일체형 성형 → 높은 강도</li>
+              <li><strong>주요 용도:</strong> 유압 배관, 자동차 배기계</li>
+            </ul>
+            <button onclick="selectService('파이프스웨이징')" class="btn btn-block btn-secondary">바로 견적요청</button>
+          </div>
+        </div>
+
+        <!-- 3. 파이프인발 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/pipe_drawing.jpg" alt="파이프인발 가공">
+            <span class="service-tag">고정밀</span>
+          </div>
+          <div class="service-info">
+            <h3>파이프인발</h3>
+            <p class="keyword">검색키워드: 파이프인발</p>
+            <p class="desc">파이프를 정밀 다이를 통과시켜 외경·내경·두께를 원하는 치수로 냉간 인발 성형합니다. 높은 치수 정밀도를 자랑합니다.</p>
+            <ul class="specs">
+              <li><strong>가공 방식:</strong> 냉간 인발 (Cold Drawing)</li>
+              <li><strong>정밀도:</strong> 외경 공차 ±0.05mm 이내 대응</li>
+              <li><strong>표면 품질:</strong> 내외면 매끄러운 마감</li>
+              <li><strong>주요 용도:</strong> 정밀 기계 부품, 베어링 레이스</li>
+            </ul>
+            <button onclick="selectService('파이프인발')" class="btn btn-block btn-secondary">바로 견적요청</button>
+          </div>
+        </div>
+
+        <!-- 4. 파이프축관 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/pipe_reducing.jpg" alt="파이프축관 가공">
+            <span class="service-tag">소구경 성형</span>
+          </div>
+          <div class="service-info">
+            <h3>파이프축관</h3>
+            <p class="keyword">검색키워드: 파이프축관</p>
+            <p class="desc">파이프의 일부 또는 전체 구간의 직경을 축소하는 가공입니다. 테이퍼형·스트레이트형 다양한 형태로 성형 가능합니다.</p>
+            <ul class="specs">
+              <li><strong>가공 형태:</strong> 테이퍼 축관, 직선 축관, 다단 축관</li>
+              <li><strong>적용 소재:</strong> 탄소강, 스테인리스, 알루미늄</li>
+              <li><strong>특징:</strong> 이음부 없는 일체형 성형 가능</li>
+              <li><strong>주요 용도:</strong> 연결 피팅, 유체 제어 배관</li>
+            </ul>
+            <button onclick="selectService('파이프축관')" class="btn btn-block btn-secondary">바로 견적요청</button>
+          </div>
+        </div>
+
+        <!-- 5. 파이프확관 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/pipe_expanding.jpg" alt="파이프확관 가공">
+            <span class="service-tag">대구경 성형</span>
+          </div>
+          <div class="service-info">
+            <h3>파이프확관</h3>
+            <p class="keyword">검색키워드: 파이프확관</p>
+            <p class="desc">맨드릴 또는 유압 확관기를 이용해 파이프 단부 또는 전체 구간의 직경을 넓히는 가공입니다.</p>
+            <ul class="specs">
+              <li><strong>가공 형태:</strong> 플레어형, 벨형, 스트레이트형</li>
+              <li><strong>적용 소재:</strong> 탄소강, 스테인리스, 동, 알루미늄</li>
+              <li><strong>특징:</strong> 균일한 두께 유지, 잔류 응력 최소화</li>
+              <li><strong>주요 용도:</strong> 열교환기, 에어컨 배관, 이음 연결</li>
+            </ul>
+            <button onclick="selectService('파이프확관')" class="btn btn-block btn-secondary">바로 견적요청</button>
+          </div>
+        </div>
+
+        <!-- 6. 파이프주문제작 -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/pipe_custom.jpg" alt="파이프주문제작">
+            <span class="service-tag">100% 맞춤</span>
+          </div>
+          <div class="service-info">
+            <h3>파이프주문제작</h3>
+            <p class="keyword">검색키워드: 파이프제작, 파이프주문제작</p>
+            <p class="desc">규격 외 비표준 사이즈, 복합 가공(벤딩+축관+확관 등) 파이프를 도면·샘플 기준으로 100% 맞춤 제작합니다.</p>
+            <ul class="specs">
+              <li><strong>제작 기준:</strong> 도면, 샘플, 규격서 모두 접수 가능</li>
+              <li><strong>복합 가공:</strong> 벤딩 + 축관 + 확관 동시 적용</li>
+              <li><strong>수량:</strong> 소량 시작품부터 대량 양산까지</li>
+              <li><strong>주요 용도:</strong> 특수 기계, 방산, 의료기기 부품</li>
+            </ul>
+            <button onclick="selectService('파이프주문제작')" class="btn btn-block btn-secondary">바로 견적요청</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY US ── -->
+  <section id="why-us" class="why-us">
+    <div class="container">
+      <div class="section-title">
+        <h2>왜 대흥정밀인가요?</h2>
+        <p>정밀 설비와 숙련된 기술인력으로 최고 품질의 파이프 가공을 제공합니다.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="icon-box">🔩</div>
+          <h3>다품목 원스톱 가공</h3>
+          <p>벤딩·스웨이징·인발·축관·확관 등 복합 가공을 한 업체에서 해결합니다. 외주 이동 없이 비용과 납기를 동시에 절감합니다.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon-box">📐</div>
+          <h3>도면 기반 정밀 가공</h3>
+          <p>고객 도면·샘플을 기반으로 치수 공차 ±0.05mm 이내 정밀 가공을 실현합니다. 까다로운 규격도 자신 있게 대응합니다.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon-box">🚀</div>
+          <h3>신속 견적 · 빠른 납기</h3>
+          <p>모바일 간편 견적으로 당일 단가 회신을 목표로 합니다. 긴급 납품 요청도 최우선으로 처리합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── QUOTE FORM ── -->
+  <section id="quote-form" class="quote-form-section">
+    <div class="container">
+      <div class="quote-container">
+
+        <div class="quote-info-side">
+          <h2>파이프 가공<br>견적 상담</h2>
+          <p>필요하신 가공 서비스와 규격을 남겨주시면<br>담당자가 신속하게 단가와 납기를 안내해 드립니다.</p>
+          <div class="contact-details">
+            <a href="tel:010-9014-9373" class="detail-item">
+              <span>📞</span>
+              <div>
+                <h4>대표 전화 (클릭 시 자동 연결)</h4>
+                <p>010-9014-9373</p>
+              </div>
+            </a>
+            <a href="mailto:daeheungsteel@naver.com" class="detail-item">
+              <span>✉️</span>
+              <div>
+                <h4>이메일 (클릭 시 메일 발송)</h4>
+                <p>daeheungsteel@naver.com</p>
+              </div>
+            </a>
+            <a href="https://map.naver.com/p/search/경기도+시흥시+범안로390번길+63" target="_blank" rel="noopener noreferrer" class="detail-item">
+              <span>📍</span>
+              <div>
+                <h4>공장 주소 (네이버 지도)</h4>
+                <p>경기도 시흥시 범안로390번길 63</p>
+              </div>
+            </a>
+            <a href="http://daeheungsteel.co.kr/" target="_blank" rel="noopener noreferrer" class="detail-item">
+              <span>🌐</span>
+              <div>
+                <h4>공식 웹사이트</h4>
+                <p>daeheungsteel.co.kr</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="quote-form-side">
+          <form id="contactForm" onsubmit="handleQuoteSubmit(event)">
+
+            <div class="form-group">
+              <label for="companyName">회사명 / 현장명 <span class="required">*</span></label>
+              <input type="text" id="companyName" required placeholder="예: 대흥건설 / 시흥산업단지 3공장">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactPerson">담당자명 <span class="required">*</span></label>
+                <input type="text" id="contactPerson" required autocomplete="name" placeholder="예: 홍길동 대리">
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">연락처 <span class="required">*</span></label>
+                <input type="tel" id="contactPhone" required autocomplete="tel" placeholder="예: 010-1234-5678">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactEmail">이메일 주소 <span class="required">*</span></label>
+                <input type="email" id="contactEmail" required autocomplete="email" placeholder="예: contact@company.com">
+              </div>
+              <div class="form-group">
+                <label for="fileAttachment">첨부파일 (도면/수량표 등)</label>
+                <div class="file-upload-wrapper">
+                  <input type="file" id="fileAttachment" accept=".jpg,.jpeg,.png,.pdf,.dwg,.dxf,.docx,.xlsx,.xls">
+                  <span class="file-upload-btn">파일 선택</span>
+                  <span id="fileName" class="file-name">선택된 파일 없음 (최대 10MB)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceSelect">가공 서비스 선택 <span class="required">*</span></label>
+              <select id="serviceSelect" required>
+                <option value="">선택해 주세요</option>
+                <option value="파이프벤딩">파이프벤딩 / 파이프밴딩</option>
+                <option value="파이프스웨이징">파이프스웨이징</option>
+                <option value="파이프인발">파이프인발</option>
+                <option value="파이프축관">파이프축관</option>
+                <option value="파이프확관">파이프확관</option>
+                <option value="파이프주문제작">파이프주문제작 / 파이프제작</option>
+                <option value="복합가공">복합 가공 (2가지 이상)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="specsInput">희망 규격 및 수량 (선택)</label>
+              <textarea id="specsInput" rows="3" placeholder="예: Ø50.8 × T2.0 탄소강, 벤딩 각도 90°, 수량 200개&#10;규격, 소재, 수량, 납기일 등 자유롭게 작성해 주세요."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-block btn-lg btn-primary" id="submitBtn">
+              견적 문의 전송하기
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-info">
+          <h3>대흥정밀<span>.</span></h3>
+          <p>주소: 경기도 시흥시 범안로390번길 63</p>
+          <p>전화: 010-9014-9373</p>
+          <p>이메일: daeheungsteel@naver.com</p>
+          <p>웹사이트: <a href="http://daeheungsteel.co.kr/" target="_blank" style="color:var(--steel)">daeheungsteel.co.kr</a></p>
+        </div>
+        <div class="footer-links">
+          <h4>파이프 가공 서비스</h4>
+          <p>파이프벤딩 · 파이프스웨이징 · 파이프인발</p>
+          <p>파이프축관 · 파이프확관 · 파이프주문제작</p>
+          <p style="margin-top:12px">파이프 가공 견적 문의 상시 접수 중</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 대흥정밀. All Rights Reserved. 본 사이트는 B2B 전용 간편 견적 및 서비스 카탈로그 페이지입니다.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
