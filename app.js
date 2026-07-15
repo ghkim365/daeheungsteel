@@ -158,3 +158,81 @@ window.addEventListener('scroll', () => {
       : 'none';
   }
 });
+
+// ─── 갤러리 탭 필터링 ──────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs  = document.querySelectorAll('.gallery-tab');
+  const items = document.querySelectorAll('.gallery-item');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // 탭 활성화
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      const filter = tab.dataset.filter;
+
+      // 아이템 필터링 (fade 효과를 위해 animation 재실행)
+      items.forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.classList.remove('hidden');
+          item.style.animation = 'none';
+          item.offsetHeight; // reflow
+          item.style.animation = '';
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // ─── 갤러리 모달 ──────────────────────────────────────
+  const modal       = document.getElementById('galleryModal');
+  const modalImg    = document.getElementById('galleryModalImg');
+  const modalBadge  = document.getElementById('galleryModalBadge');
+  const modalTitle  = document.getElementById('galleryModalTitle');
+  const modalDesc   = document.getElementById('galleryModalDesc');
+  const modalQuote  = document.getElementById('galleryModalQuoteBtn');
+  const modalClose  = document.getElementById('galleryModalClose');
+  const modalBackdrop = document.getElementById('galleryModalBackdrop');
+
+  function openModal(item) {
+    const img = item.querySelector('.gallery-thumb img');
+    const badge = item.querySelector('.gallery-cat-badge');
+
+    modalImg.src    = img ? img.src : '';
+    modalImg.alt    = img ? img.alt : '';
+    modalBadge.textContent = badge ? badge.textContent : '';
+    modalTitle.textContent = item.dataset.title  || '';
+    modalDesc.textContent  = item.dataset.desc   || '';
+
+    const service = item.dataset.service || '';
+    modalQuote.onclick = () => {
+      closeModal();
+      selectService(service);
+    };
+
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // 갤러리 아이템 클릭 시 모달 열기
+  items.forEach(item => {
+    item.addEventListener('click', () => openModal(item));
+  });
+
+  // 닫기 버튼 및 배경 클릭
+  if (modalClose)   modalClose.addEventListener('click', closeModal);
+  if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
+
+  // ESC 키로 닫기
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
+});
