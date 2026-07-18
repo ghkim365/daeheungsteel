@@ -2,7 +2,7 @@
 *.bak
 
 # Draft documents and planning materials
-*제안서*.html
-*기획안*.pptx
-*원고*.txt
-*원고*.html
+# *제안서*.html
+# *기획안*.pptx
+# *원고*.txt
+# *원고*.html
