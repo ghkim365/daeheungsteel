@@ -930,20 +930,31 @@ img { max-width: 100%; display: block; }
   .services-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .hero-content h1 { font-size: 1.8rem; }
-  .nav { gap: 6px; }
+  
+  /* 모바일 로고 및 네비게이션 최적화 (겹침 원천 방지) */
+  .logo {
+    gap: 6px;
+  }
+  .logo img {
+    height: 24px;
+  }
+  .logo-text {
+    font-size: 0.85rem;
+  }
+  .nav { gap: 4px; }
   .nav a[href="#specifications"],
   .nav a[href="#why-us"] {
     display: none !important;
   }
   .nav a:not(.btn) {
     display: inline-block;
-    font-size: 12.5px;
+    font-size: 11px;
     white-space: nowrap;
-    padding: 4px 6px;
+    padding: 4px 4px;
   }
   .nav .btn {
-    padding: 6px 12px;
-    font-size: 12px;
+    padding: 6px 10px;
+    font-size: 11px;
   }
   .quote-info-side, .quote-form-side { padding: 28px 20px; }
   /* 갤러리 2열 */
