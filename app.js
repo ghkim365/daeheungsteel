@@ -61,8 +61,14 @@ function handleQuoteSubmit(event) {
   const contactPhone   = document.getElementById('contactPhone').value.trim();
   const contactEmail   = document.getElementById('contactEmail').value.trim();
   const serviceSelect  = document.getElementById('serviceSelect').value;
-  const specsInput     = document.getElementById('specsInput').value.trim();
+  let specsInput       = document.getElementById('specsInput').value.trim();
   const fileAttachment = document.getElementById('fileAttachment');
+
+  // 네이버 UTM 키워드가 세션에 저장되어 있으면 규격 끝에 자동으로 기입
+  const sessionTerm = sessionStorage.getItem('dhsteel_session_term');
+  if (sessionTerm) {
+    specsInput = (specsInput ? specsInput + '\n\n' : '') + `[네이버 광고 유입 키워드: ${sessionTerm}]`;
+  }
 
   if (!companyName || !contactPerson || !contactPhone || !contactEmail || !serviceSelect) {
     showToast('필수 항목을 모두 입력해 주세요.', 'error');
@@ -98,7 +104,7 @@ function handleQuoteSubmit(event) {
     formData.append('attachment', fileAttachment.files[0]);
   }
 
-  fetch('https://formsubmit.co/ajax/daeheungsteel@naver.com', {
+  fetch('https://formsubmit.co/ajax/dhsteel7@gmail.com', {
     method: 'POST',
     body: formData
   })
@@ -123,7 +129,7 @@ function handleQuoteSubmit(event) {
     const body = encodeURIComponent(
       `회사명/현장명: ${companyName}\n담당자: ${contactPerson}\n연락처: ${contactPhone}\n이메일: ${contactEmail}\n가공 서비스: ${serviceSelect}\n규격/수량: ${specsInput || '미입력'}`
     );
-    window.location.href = `mailto:daeheungsteel@naver.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:dhsteel7@gmail.com?subject=${subject}&body=${body}`;
     showToast('직접 메일을 통해 견적을 보내드리겠습니다.', 'error');
   })
   .finally(() => {
@@ -236,3 +242,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') closeModal();
   });
 });
+
+// 네이버 UTM 키워드 분석 및 세션 보존
+(function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmTerm = urlParams.get('utm_term');
+  if (utmTerm) {
+    sessionStorage.setItem('dhsteel_session_term', utmTerm);
+  }
+})();
