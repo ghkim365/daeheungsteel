@@ -1,9 +1,9 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[미리보기] 대흥정밀 B2B 파이프 임가공 제안서</title>
+  <title>대흥정밀 B2B 파이프 임가공 제안서</title>
   <style>
     body { margin: 0; padding: 0; background-color: #f4f6f8; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; -webkit-text-size-adjust: none; }
     table { border-collapse: collapse; }
@@ -28,6 +28,13 @@
     .service-body p { font-size: 13px; color: #475569; margin: 0 0 10px 0; line-height: 1.5; }
     .service-specs { margin: 0; padding-left: 20px; font-size: 13px; color: #334155; line-height: 1.6; }
     
+    .product-gallery { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #e2e8f0; }
+    .gallery-title { font-size: 12px; color: #64748b; font-weight: bold; margin-bottom: 8px; }
+    .gallery-grid { display: flex; flex-wrap: wrap; margin: -3px; }
+    .gallery-item { width: 25%; padding: 3px; box-sizing: border-box; display: inline-block; vertical-align: top; }
+    .gallery-item img { width: 100%; height: 75px; object-fit: cover; border-radius: 4px; border: 1px solid #e2e8f0; display: block; transition: all 0.2s ease-in-out; }
+    .gallery-item img:hover { border-color: #3b82f6; transform: scale(1.05); }
+    
     .benefits { padding: 25px; background-color: #f8fafc; margin: 20px 25px; border-radius: 6px; border-left: 4px solid #64748b; }
     .benefits h4 { margin: 0 0 10px 0; color: #0f172a; font-size: 15px; }
     .benefits ul { margin: 0; padding-left: 20px; font-size: 13px; color: #475569; line-height: 1.7; }
@@ -46,8 +53,8 @@
       
       <!-- 헤더 (로고 및 업체명) -->
       <div class="header">
-        <!-- 미리보기용 로컬 상대경로로 수정 -->
-        <img class="header-logo" src="images/logo.png" alt="대흥정밀">
+        <!-- CID 이미지 참조: cid:logo -->
+        <img class="header-logo" src="cid:logo" alt="대흥정밀">
         <span class="header-title">대흥정밀</span>
       </div>
       
@@ -65,8 +72,8 @@
       
       <!-- 카드 1: 파이프스웨이징 -->
       <div class="service-card">
-        <!-- 미리보기용 로컬 상대경로로 수정 -->
-        <img class="service-img" src="images/pipe_swaging.jpg" alt="파이프스웨이징">
+        <!-- CID 이미지 참조: cid:pipe_swaging -->
+        <img class="service-img" src="cid:pipe_swaging" alt="파이프스웨이징">
         <div class="service-body">
           <h3>1. 파이프스웨이징 (단부 축관/테이퍼 가공)</h3>
           <p>죠(Jaw) 가공 공법을 이용하여 용접 없이 매끄러운 원추형 및 가늘어지는 테이퍼 형태의 축관을 실현합니다.</p>
@@ -74,13 +81,26 @@
             <li><strong>가공 범위:</strong> 50Φ 이하 원형 파이프 (길이 400mm 이하)</li>
             <li><strong>주요 용도:</strong> 철재 의자/책상 다리 프레임, 기계 결합부 부품</li>
           </ul>
+          <div class="product-gallery">
+            <div class="gallery-title">📸 파이프스웨이징 제품/현장 갤러리</div>
+            <div class="gallery-grid">
+              <div class="gallery-item"><img src="cid:swaging_02" alt="파이프스웨이징 02"></div>
+              <div class="gallery-item"><img src="cid:swaging_03" alt="파이프스웨이징 03"></div>
+              <div class="gallery-item"><img src="cid:swaging_04" alt="파이프스웨이징 04"></div>
+              <div class="gallery-item"><img src="cid:swaging_05" alt="파이프스웨이징 05"></div>
+              <div class="gallery-item"><img src="cid:swaging_06" alt="파이프스웨이징 06"></div>
+              <div class="gallery-item"><img src="cid:swaging_07" alt="파이프스웨이징 07"></div>
+              <div class="gallery-item"><img src="cid:swaging_08" alt="파이프스웨이징 08"></div>
+              <div class="gallery-item"><img src="cid:processing_13" alt="파이프스웨이징 09"></div>
+            </div>
+          </div>
         </div>
       </div>
       
       <!-- 카드 2: 파이프벤딩 -->
       <div class="service-card">
-        <!-- 미리보기용 로컬 상대경로로 수정 -->
-        <img class="service-img" src="images/pipe_bending.jpg" alt="파이프벤딩">
+        <!-- CID 이미지 참조: cid:pipe_bending -->
+        <img class="service-img" src="cid:pipe_bending" alt="파이프벤딩">
         <div class="service-body">
           <h3>2. 파이프벤딩 (원형 및 사각 굽힘)</h3>
           <p>정밀 유압식/CNC 벤더를 사용해 주름과 단면 찌그러짐을 최소화하여 원하는 각도(1°~180°)로 구부립니다.</p>
@@ -88,13 +108,26 @@
             <li><strong>가공 범위:</strong> 원형 38Φ 이하 / 사각 20x40각 이하의 철재류</li>
             <li><strong>주요 용도:</strong> 가구 곡선 프레임, 장비 안전 바, 배관재</li>
           </ul>
+          <div class="product-gallery">
+            <div class="gallery-title">📸 파이프벤딩 제품/현장 갤러리</div>
+            <div class="gallery-grid">
+              <div class="gallery-item"><img src="cid:bending_02" alt="파이프벤딩 02"></div>
+              <div class="gallery-item"><img src="cid:bending_03" alt="파이프벤딩 03"></div>
+              <div class="gallery-item"><img src="cid:bending_04" alt="파이프벤딩 04"></div>
+              <div class="gallery-item"><img src="cid:bending_05" alt="파이프벤딩 05"></div>
+              <div class="gallery-item"><img src="cid:bending_06" alt="파이프벤딩 06"></div>
+              <div class="gallery-item"><img src="cid:bending_07" alt="파이프벤딩 07"></div>
+              <div class="gallery-item"><img src="cid:bending_08" alt="파이프벤딩 08"></div>
+              <div class="gallery-item"><img src="cid:bending_09" alt="파이프벤딩 09"></div>
+            </div>
+          </div>
         </div>
       </div>
       
       <!-- 카드 3: 파이프포밍 -->
       <div class="service-card">
-        <!-- 미리보기용 로컬 상대경로로 수정 -->
-        <img class="service-img" src="images/pipe_custom.jpg" alt="파이프포밍 및 주문가공">
+        <!-- CID 이미지 참조: cid:pipe_custom -->
+        <img class="service-img" src="cid:pipe_custom" alt="파이프포밍 및 주문가공">
         <div class="service-body">
           <h3>3. 파이프포밍 (확관/비딩/플레어 성형)</h3>
           <p>파이프의 끝부분을 넓히거나(확관) 볼록하게 성형(비딩)하여 타 부품과의 조립 및 밀착 체결력을 높여줍니다.</p>
@@ -102,6 +135,19 @@
             <li><strong>가공 범위:</strong> 32Φ 이하 소구경 원형 파이프</li>
             <li><strong>주요 용도:</strong> 조인트 연결 커넥터, 조립식 기둥, 파이프 칼라</li>
           </ul>
+          <div class="product-gallery">
+            <div class="gallery-title">📸 파이프포밍 제품/현장 갤러리</div>
+            <div class="gallery-grid">
+              <div class="gallery-item"><img src="cid:forming_02" alt="파이프포밍 02"></div>
+              <div class="gallery-item"><img src="cid:forming_03" alt="파이프포밍 03"></div>
+              <div class="gallery-item"><img src="cid:forming_04" alt="파이프포밍 04"></div>
+              <div class="gallery-item"><img src="cid:forming_05" alt="파이프포밍 05"></div>
+              <div class="gallery-item"><img src="cid:forming_06" alt="파이프포밍 06"></div>
+              <div class="gallery-item"><img src="cid:forming_07" alt="파이프포밍 07"></div>
+              <div class="gallery-item"><img src="cid:forming_08" alt="파이프포밍 08"></div>
+              <div class="gallery-item"><img src="cid:forming_01" alt="파이프포밍 09"></div>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -117,14 +163,14 @@
       <!-- 행동 유도 버튼 -->
       <div class="cta-box">
         <p style="font-size:14px; color:#475569; margin:0 0 15px 0;">간편하게 사진을 올려 견적을 받아보세요.</p>
-        <a href="https://dhsteel.vercel.app/" class="btn">모바일 견적 카탈로그 보기 →</a>
+        <a href="http://daeheungsteel.co.kr" class="btn">모바일 견적 카탈로그 보기 →</a>
       </div>
       
       <!-- 푸터 -->
       <div class="footer">
         <p><strong>대흥정밀 (DH Steel)</strong></p>
         <p>주소: 경기도 시흥시 범안로390번길 63 | 전화: 010-9014-9373</p>
-        <p>이메일: <a href="mailto:dhsteel7@gmail.com">dhsteel7@gmail.com</a></p>
+        <p>이메일: <a href="mailto:daeheungsteel@naver.com">daeheungsteel@naver.com</a></p>
         <p style="margin-top:15px; color:#64748b;">본 메일은 B2B 협력을 제안하기 위한 용도로 발송되었습니다.</p>
       </div>
       

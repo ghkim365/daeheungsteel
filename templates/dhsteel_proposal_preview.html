@@ -14,181 +14,233 @@
       var pw = prompt("보안 미리보기를 위한 비밀번호를 입력해 주세요:");
       if (pw !== "dh123") {
         alert("올바르지 않은 비밀번호입니다.");
-        window.location.href = "http://daeheungsteel.co.kr";
+        window.location.href = "https://dhsteel.vercel.app/";
       }
     })();
   </script>
-  <style>
-    body { margin: 0; padding: 0; background-color: #f4f6f8; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; -webkit-text-size-adjust: none; }
-    table { border-collapse: collapse; }
-    .wrapper { width: 100%; table-layout: fixed; background-color: #f4f6f8; padding: 30px 0; }
-    .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-    .header { background-color: #1e293b; padding: 25px; text-align: center; }
-    .header-logo { height: 40px; vertical-align: middle; }
-    .header-title { color: #ffffff; font-size: 22px; font-weight: bold; margin-left: 10px; vertical-align: middle; display: inline-block; }
-    .hero { padding: 35px 25px; text-align: center; border-bottom: 1px solid #e2e8f0; }
-    .badge { background-color: #3b82f6; color: #ffffff; font-size: 12px; font-weight: bold; padding: 4px 10px; border-radius: 50px; display: inline-block; margin-bottom: 15px; }
-    .hero h1 { font-size: 24px; color: #0f172a; margin: 0 0 15px 0; line-height: 1.3; }
-    .hero h1 span { color: #3b82f6; }
-    .hero p { font-size: 15px; color: #475569; margin: 0; line-height: 1.6; }
-    
-    .section-title { font-size: 18px; font-weight: bold; color: #0f172a; margin: 30px 25px 15px 25px; padding-left: 10px; border-left: 4px solid #3b82f6; }
-    
-    /* 가공 서비스 카탈로그 카드형 구조 */
-    .service-card { margin: 0 25px 20px 25px; border: 1px solid #e2e8f0; border-radius: 6px; overflow: hidden; background-color: #fafbfd; }
-    .service-img { width: 100%; height: auto; display: block; }
-    .service-body { padding: 18px; }
-    .service-body h3 { font-size: 16px; color: #0f172a; margin: 0 0 8px 0; font-weight: bold; }
-    .service-body p { font-size: 13px; color: #475569; margin: 0 0 10px 0; line-height: 1.5; }
-    .service-specs { margin: 0; padding-left: 20px; font-size: 13px; color: #334155; line-height: 1.6; }
-    
-    .product-gallery { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #e2e8f0; }
-    .gallery-title { font-size: 12px; color: #64748b; font-weight: bold; margin-bottom: 8px; }
-    .gallery-grid { display: flex; flex-wrap: wrap; margin: -3px; }
-    .gallery-item { width: 25%; padding: 3px; box-sizing: border-box; display: inline-block; vertical-align: top; }
-    .gallery-item img { width: 100%; height: 75px; object-fit: cover; border-radius: 4px; border: 1px solid #e2e8f0; display: block; transition: all 0.2s ease-in-out; }
-    .gallery-item img:hover { border-color: #3b82f6; transform: scale(1.05); }
-    
-    .benefits { padding: 25px; background-color: #f8fafc; margin: 20px 25px; border-radius: 6px; border-left: 4px solid #64748b; }
-    .benefits h4 { margin: 0 0 10px 0; color: #0f172a; font-size: 15px; }
-    .benefits ul { margin: 0; padding-left: 20px; font-size: 13px; color: #475569; line-height: 1.7; }
-    
-    .cta-box { text-align: center; padding: 30px 25px; background-color: #f1f5f9; }
-    .btn { background-color: #3b82f6; color: #ffffff; text-decoration: none; font-size: 16px; font-weight: bold; padding: 12px 35px; border-radius: 5px; display: inline-block; box-shadow: 0 4px 6px rgba(59,130,246,0.2); }
-    .btn:hover { background-color: #2563eb; }
-    
-    .footer { background-color: #1e293b; padding: 25px; color: #94a3b8; font-size: 12px; line-height: 1.6; text-align: center; }
-    .footer a { color: #3b82f6; text-decoration: none; }
-  </style>
 </head>
-<body>
-  <div class="wrapper">
-    <div class="container">
+<body style="margin: 0; padding: 0; background-color: #f4f6f8; font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; -webkit-text-size-adjust: none;">
+  <div style="width: 100%; table-layout: fixed; background-color: #f4f6f8; padding: 30px 0;">
+    <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" align="center"
+      style="width: 600px; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); border-collapse: collapse;">
+      <tr>
+        <td style="background-color: #ffffff; text-align: left; padding: 0; margin: 0;">
       
-      <!-- 헤더 (로고 및 업체명) -->
-      <div class="header">
-        <!-- 미리보기용 로컬 상대경로로 수정 -->
-        <img class="header-logo" src="../images/logo.png" alt="대흥정밀">
-        <span class="header-title">대흥정밀</span>
-      </div>
-      
-      <!-- 히어로 영역 (개인화 메일 오프닝) -->
-      <div class="hero">
-        <span class="badge">B2B 파이프 정밀 가공 파트너</span>
-        <h1>안녕하세요, <span>{회사명}</span> 대표님/담당자님!</h1>
-        <p>
-          경기도 시흥의 소구경 파이프 임가공 전문 제조사 <strong>대흥정밀</strong>입니다.<br>
-          귀사의 소중한 제품에 들어가는 파이프 가공품 조달의 <strong>원가 절감과 납기 안정화</strong>를 위해 정식 협력을 제안드립니다.
-        </p>
-      </div>
-      
-      <div class="section-title">주요 파이프 가공 서비스 카탈로그</div>
-      
-      <!-- 카드 1: 파이프스웨이징 -->
-      <div class="service-card">
-        <!-- 미리보기용 로컬 상대경로로 수정 -->
-        <img class="service-img" src="../images/pipe_swaging.jpg" alt="파이프스웨이징">
-        <div class="service-body">
-          <h3>1. 파이프스웨이징 (단부 축관/테이퍼 가공)</h3>
-          <p>죠(Jaw) 가공 공법을 이용하여 용접 없이 매끄러운 원추형 및 가늘어지는 테이퍼 형태의 축관을 실현합니다.</p>
-          <ul class="service-specs">
-            <li><strong>가공 범위:</strong> 50Φ 이하 원형 파이프 (길이 400mm 이하)</li>
-            <li><strong>주요 용도:</strong> 철재 의자/책상 다리 프레임, 기계 결합부 부품</li>
-          </ul>
-          <div class="product-gallery">
-            <div class="gallery-title">📸 파이프스웨이징 제품/현장 갤러리</div>
-            <div class="gallery-grid">
-              <div class="gallery-item"><img src="../gallery/swaging_02.jpg" alt="파이프스웨이징 02"></div>
-              <div class="gallery-item"><img src="../gallery/swaging_03.jpg" alt="파이프스웨이징 03"></div>
-              <div class="gallery-item"><img src="../gallery/swaging_04.jpg" alt="파이프스웨이징 04"></div>
-              <div class="gallery-item"><img src="../gallery/swaging_05.jpg" alt="파이프스웨이징 05"></div>
-              <div class="gallery-item"><img src="../gallery/swaging_06.jpg" alt="파이프스웨이징 06"></div>
-              <div class="gallery-item"><img src="../gallery/swaging_07.jpg" alt="파이프스웨이징 07"></div>
-              <div class="gallery-item"><img src="../gallery/swaging_08.jpg" alt="파이프스웨이징 08"></div>
-              <div class="gallery-item"><img src="../gallery/processing_13.jpg" alt="파이프스웨이징 09"></div>
+          <!-- 헤더 (로고 및 업체명) -->
+          <div style="background-color: #1e293b; padding: 25px; text-align: center;">
+            <img src="../images/logo.png" alt="대흥정밀" style="height: 40px; vertical-align: middle; border: 0; display: inline-block;">
+            <span style="color: #ffffff; font-size: 22px; font-weight: bold; margin-left: 10px; vertical-align: middle; display: inline-block;">대흥정밀</span>
+          </div>
+          
+          <!-- 히어로 영역 -->
+          <div style="padding: 35px 25px; text-align: center; border-bottom: 1px solid #e2e8f0;">
+            <span style="background-color: #3b82f6; color: #ffffff; font-size: 12px; font-weight: bold; padding: 4px 10px; border-radius: 50px; display: inline-block; margin-bottom: 15px;">B2B 파이프 정밀 가공 파트너</span>
+            <h1 style="font-size: 24px; color: #0f172a; margin: 0 0 15px 0; line-height: 1.3; font-weight: bold;">안녕하세요, <span style="color: #3b82f6;">{회사명}</span> 대표님/담당자님!</h1>
+            <p style="font-size: 15px; color: #475569; margin: 0; line-height: 1.6;">
+              경기도 시흥의 소구경 파이프 임가공 전문 제조사 <strong>대흥정밀</strong>입니다.<br>
+              귀사의 소중한 제품에 들어가는 파이프 가공품 조달의 <strong>원가 절감과 납기 안정화</strong>를 위해 정식 협력을 제안드립니다.
+            </p>
+          </div>
+          
+          <div style="font-size: 18px; font-weight: bold; color: #0f172a; margin: 30px 25px 15px 25px; padding-left: 10px; border-left: 4px solid #3b82f6;">주요 파이프 가공 서비스 카탈로그</div>
+          
+          <!-- 카드 1: 파이프스웨이징 -->
+          <div style="margin: 0 25px 20px 25px; border: 1px solid #e2e8f0; border-radius: 6px; overflow: hidden; background-color: #fafbfd;">
+            <img src="../images/pipe_swaging.jpg" alt="파이프스웨이징" style="width: 100%; height: auto; display: block; border: 0;">
+            <div style="padding: 18px;">
+              <h3 style="font-size: 16px; color: #0f172a; margin: 0 0 8px 0; font-weight: bold;">1. 파이프스웨이징 (단부 축관/테이퍼 가공)</h3>
+              <p style="font-size: 13px; color: #475569; margin: 0 0 10px 0; line-height: 1.5;">죠(Jaw) 가공 공법을 이용하여 용접 없이 매끄러운 원추형 및 가늘어지는 테이퍼 형태의 축관을 실현합니다.</p>
+              <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #334155; line-height: 1.6;">
+                <li><strong>가공 범위:</strong> 50Φ 이하 원형 파이프 (길이 400mm 이하)</li>
+                <li><strong>주요 용도:</strong> 철재 의자/책상 다리 프레임, 기계 결합부 부품</li>
+              </ul>
+              
+              <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px; border-collapse: collapse;">
+                  <tr>
+                    <td style="padding-bottom: 8px; font-size: 12px; color: #64748b; font-weight: bold; text-align: left;">
+                      📸 파이프스웨이징 제품/현장 갤러리
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 0;">
+                      <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="width: 100%; max-width: 480px; margin: 0 auto; border-collapse: collapse;">
+                        <tr>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/swaging_02.jpg" alt="파이프스웨이징 02" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/swaging_03.jpg" alt="파이프스웨이징 03" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/swaging_04.jpg" alt="파이프스웨이징 04" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/swaging_05.jpg" alt="파이프스웨이징 05" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/swaging_06.jpg" alt="파이프스웨이징 06" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/swaging_07.jpg" alt="파이프스웨이징 07" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/swaging_08.jpg" alt="파이프스웨이징 08" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/processing_13.jpg" alt="파이프스웨이징 09" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      <!-- 카드 2: 파이프벤딩 -->
-      <div class="service-card">
-        <!-- 미리보기용 로컬 상대경로로 수정 -->
-        <img class="service-img" src="../images/pipe_bending.jpg" alt="파이프벤딩">
-        <div class="service-body">
-          <h3>2. 파이프벤딩 (원형 및 사각 굽힘)</h3>
-          <p>정밀 유압식/CNC 벤더를 사용해 주름과 단면 찌그러짐을 최소화하여 원하는 각도(1°~180°)로 구부립니다.</p>
-          <ul class="service-specs">
-            <li><strong>가공 범위:</strong> 원형 38Φ 이하 / 사각 20x40각 이하의 철재류</li>
-            <li><strong>주요 용도:</strong> 가구 곡선 프레임, 장비 안전 바, 배관재</li>
-          </ul>
-          <div class="product-gallery">
-            <div class="gallery-title">📸 파이프벤딩 제품/현장 갤러리</div>
-            <div class="gallery-grid">
-              <div class="gallery-item"><img src="../gallery/bending_02.jpg" alt="파이프벤딩 02"></div>
-              <div class="gallery-item"><img src="../gallery/bending_03.jpg" alt="파이프벤딩 03"></div>
-              <div class="gallery-item"><img src="../gallery/bending_04.jpg" alt="파이프벤딩 04"></div>
-              <div class="gallery-item"><img src="../gallery/bending_05.jpg" alt="파이프벤딩 05"></div>
-              <div class="gallery-item"><img src="../gallery/bending_06.jpg" alt="파이프벤딩 06"></div>
-              <div class="gallery-item"><img src="../gallery/bending_07.jpg" alt="파이프벤딩 07"></div>
-              <div class="gallery-item"><img src="../gallery/bending_08.jpg" alt="파이프벤딩 08"></div>
-              <div class="gallery-item"><img src="../gallery/bending_09.jpg" alt="파이프벤딩 09"></div>
+          
+          <!-- 카드 2: 파이프벤딩 -->
+          <div style="margin: 0 25px 20px 25px; border: 1px solid #e2e8f0; border-radius: 6px; overflow: hidden; background-color: #fafbfd;">
+            <img src="../images/pipe_bending.jpg" alt="파이프벤딩" style="width: 100%; height: auto; display: block; border: 0;">
+            <div style="padding: 18px;">
+              <h3 style="font-size: 16px; color: #0f172a; margin: 0 0 8px 0; font-weight: bold;">2. 파이프벤딩 (원형 및 사각 굽힘)</h3>
+              <p style="font-size: 13px; color: #475569; margin: 0 0 10px 0; line-height: 1.5;">정밀 유압식/CNC 벤더를 사용해 주름과 단면 찌그러짐을 최소화하여 원하는 각도(1°~180°)로 구부립니다.</p>
+              <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #334155; line-height: 1.6;">
+                <li><strong>가공 범위:</strong> 원형 38Φ 이하 / 사각 20x40각 이하의 철재류</li>
+                <li><strong>주요 용도:</strong> 가구 곡선 프레임, 장비 안전 바, 배관재</li>
+              </ul>
+              
+              <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px; border-collapse: collapse;">
+                  <tr>
+                    <td style="padding-bottom: 8px; font-size: 12px; color: #64748b; font-weight: bold; text-align: left;">
+                      📸 파이프벤딩 제품/현장 갤러리
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 0;">
+                      <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="width: 100%; max-width: 480px; margin: 0 auto; border-collapse: collapse;">
+                        <tr>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/bending_02.jpg" alt="파이프벤딩 02" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/bending_03.jpg" alt="파이프벤딩 03" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/bending_04.jpg" alt="파이프벤딩 04" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/bending_05.jpg" alt="파이프벤딩 05" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/bending_06.jpg" alt="파이프벤딩 06" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/bending_07.jpg" alt="파이프벤딩 07" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/bending_08.jpg" alt="파이프벤딩 08" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/bending_09.jpg" alt="파이프벤딩 09" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      <!-- 카드 3: 파이프포밍 -->
-      <div class="service-card">
-        <!-- 미리보기용 로컬 상대경로로 수정 -->
-        <img class="service-img" src="../images/pipe_custom.jpg" alt="파이프포밍 및 주문가공">
-        <div class="service-body">
-          <h3>3. 파이프포밍 (확관/비딩/플레어 성형)</h3>
-          <p>파이프의 끝부분을 넓히거나(확관) 볼록하게 성형(비딩)하여 타 부품과의 조립 및 밀착 체결력을 높여줍니다.</p>
-          <ul class="service-specs">
-            <li><strong>가공 범위:</strong> 32Φ 이하 소구경 원형 파이프</li>
-            <li><strong>주요 용도:</strong> 조인트 연결 커넥터, 조립식 기둥, 파이프 칼라</li>
-          </ul>
-          <div class="product-gallery">
-            <div class="gallery-title">📸 파이프포밍 제품/현장 갤러리</div>
-            <div class="gallery-grid">
-              <div class="gallery-item"><img src="../gallery/forming_02.jpg" alt="파이프포밍 02"></div>
-              <div class="gallery-item"><img src="../gallery/forming_03.jpg" alt="파이프포밍 03"></div>
-              <div class="gallery-item"><img src="../gallery/forming_04.jpg" alt="파이프포밍 04"></div>
-              <div class="gallery-item"><img src="../gallery/forming_05.jpg" alt="파이프포밍 05"></div>
-              <div class="gallery-item"><img src="../gallery/forming_06.jpg" alt="파이프포밍 06"></div>
-              <div class="gallery-item"><img src="../gallery/forming_07.jpg" alt="파이프포밍 07"></div>
-              <div class="gallery-item"><img src="../gallery/forming_08.jpg" alt="파이프포밍 08"></div>
-              <div class="gallery-item"><img src="../gallery/forming_01.jpg" alt="파이프포밍 09"></div>
+          
+          <!-- 카드 3: 파이프포밍 -->
+          <div style="margin: 0 25px 20px 25px; border: 1px solid #e2e8f0; border-radius: 6px; overflow: hidden; background-color: #fafbfd;">
+            <img src="../images/pipe_custom.jpg" alt="파이프포밍 및 주문가공" style="width: 100%; height: auto; display: block; border: 0;">
+            <div style="padding: 18px;">
+              <h3 style="font-size: 16px; color: #0f172a; margin: 0 0 8px 0; font-weight: bold;">3. 파이프포밍 (확관/비딩/플레어 성형)</h3>
+              <p style="font-size: 13px; color: #475569; margin: 0 0 10px 0; line-height: 1.5;">파이프의 끝부분을 넓히거나(확관) 볼록하게 성형(비딩)하여 타 부품과의 조립 및 밀착 체결력을 높여줍니다.</p>
+              <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #334155; line-height: 1.6;">
+                <li><strong>가공 범위:</strong> 32Φ 이하 소구경 원형 파이프</li>
+                <li><strong>주요 용도:</strong> 조인트 연결 커넥터, 조립식 기둥, 파이프 칼라</li>
+              </ul>
+              
+              <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed #e2e8f0;">
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px; border-collapse: collapse;">
+                  <tr>
+                    <td style="padding-bottom: 8px; font-size: 12px; color: #64748b; font-weight: bold; text-align: left;">
+                      📸 파이프포밍 제품/현장 갤러리
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 0;">
+                      <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="width: 100%; max-width: 480px; margin: 0 auto; border-collapse: collapse;">
+                        <tr>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/forming_02.jpg" alt="파이프포밍 02" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/forming_03.jpg" alt="파이프포밍 03" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/forming_04.jpg" alt="파이프포밍 04" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/forming_05.jpg" alt="파이프포밍 05" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/forming_06.jpg" alt="파이프포밍 06" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/forming_07.jpg" alt="파이프포밍 07" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/forming_08.jpg" alt="파이프포밍 08" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                          <td width="25%" style="width: 25%; padding: 2px; text-align: center; vertical-align: top;">
+                            <img src="../gallery/forming_01.jpg" alt="파이프포밍 09" width="120" height="75" style="width: 100%; max-width: 120px; height: 75px; display: block; margin: 0 auto; border-radius: 4px; border: 1px solid #e2e8f0; object-fit: cover;">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      <!-- 혜택 박스 -->
-      <div class="benefits">
-        <h4>🎁 B2B 신규 협력 파트너 혜택 제안</h4>
-        <ul>
-          <li><strong>무상 초도 샘플 제작:</strong> 가공 도면이나 현물 샘플 치수를 공유해 주시면, 확인 후 <strong>무상 샘플</strong>을 제작하여 발송해 드립니다. 직접 조립해 보시고 품질을 비교해 보세요.</li>
-          <li><strong>당일 신속 견적 회신:</strong> 모바일 웹을 통해 사진만 올려주셔도 빠르게 단가를 회신해 드립니다.</li>
-        </ul>
-      </div>
-      
-      <!-- 행동 유도 버튼 -->
-      <div class="cta-box">
-        <p style="font-size:14px; color:#475569; margin:0 0 15px 0;">간편하게 사진을 올려 견적을 받아보세요.</p>
-        <a href="http://daeheungsteel.co.kr" class="btn">모바일 견적 카탈로그 보기 →</a>
-      </div>
-      
-      <!-- 푸터 -->
-      <div class="footer">
-        <p><strong>대흥정밀 (DH Steel)</strong></p>
-        <p>주소: 경기도 시흥시 범안로390번길 63 | 전화: 010-9014-9373</p>
-        <p>이메일: <a href="mailto:dhsteel7@gmail.com">dhsteel7@gmail.com</a></p>
-        <p style="margin-top:15px; color:#64748b;">본 메일은 B2B 협력을 제안하기 위한 용도로 발송되었습니다.</p>
-      </div>
-      
-    </div>
+          
+          <!-- 혜택 박스 -->
+          <div style="padding: 25px; background-color: #f8fafc; margin: 20px 25px; border-radius: 6px; border-left: 4px solid #64748b;">
+            <h4 style="margin: 0 0 10px 0; color: #0f172a; font-size: 15px; font-weight: bold;">🎁 B2B 신규 협력 파트너 혜택 제안</h4>
+            <ul style="margin: 0; padding-left: 20px; font-size: 13px; color: #475569; line-height: 1.7;">
+              <li><strong>무상 초도 샘플 제작:</strong> 가공 도면이나 현물 샘플 치수를 공유해 주시면, 확인 후 <strong>무상 샘플</strong>을 제작하여 발송해 드립니다. 직접 조립해 보시고 품질을 비교해 보세요.</li>
+              <li><strong>당일 신속 견적 회신:</strong> 모바일 웹을 통해 사진만 올려주셔도 빠르게 단가를 회신해 드립니다.</li>
+            </ul>
+          </div>
+          
+          <!-- 행동 유도 버튼 -->
+          <div style="text-align: center; padding: 30px 25px; background-color: #f1f5f9;">
+            <p style="font-size:14px; color:#475569; margin:0 0 15px 0;">간편하게 사진을 올려 견적을 받아보세요.</p>
+            <a href="https://dhsteel.vercel.app/" style="background-color: #3b82f6; color: #ffffff; text-decoration: none; font-size: 16px; font-weight: bold; padding: 12px 35px; border-radius: 5px; display: inline-block;">모바일 견적 카탈로그 보기 →</a>
+          </div>
+          
+          <!-- 푸터 -->
+          <div style="background-color: #1e293b; padding: 25px; color: #94a3b8; font-size: 12px; line-height: 1.6; text-align: center;">
+            <p style="margin: 0 0 8px 0;"><strong>대흥정밀 (DH Steel)</strong></p>
+            <p style="margin: 0 0 8px 0;">주소: 경기도 시흥시 범안로390번길 63 | 전화: 010-9014-9373</p>
+            <p style="margin: 0 0 8px 0;">이메일: <a href="mailto:dhsteel7@gmail.com" style="color: #3b82f6; text-decoration: none;">dhsteel7@gmail.com</a></p>
+            <p style="margin: 15px 0 0 0; color: #64748b;">본 메일은 B2B 협력을 제안하기 위한 용도로 발송되었습니다.</p>
+          </div>
+          
+        </td>
+      </tr>
+    </table>
   </div>
 </body>
 </html>
